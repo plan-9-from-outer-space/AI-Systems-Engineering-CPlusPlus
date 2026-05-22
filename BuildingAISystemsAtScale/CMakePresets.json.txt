@@ -1,0 +1,25 @@
+
+{
+  "version": 5,
+  "cmakeMinimumRequired": {
+    "major": 4,
+    "minor": 3,
+    "patch": 2
+  },
+  "$comment": "My CMakePresets.json file",
+   "configurePresets": [
+    {
+      "$comment": ["This is a comment row."],
+      "name": "default",
+      "displayName": "Default Config",
+      "description": "Default settings for CMake project",
+      "hidden": false,
+      "generator": "Ninja",
+      "binaryDir": "${workspaceFolder}/build",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "YES"
+      }
+    }
+  ]
+}
